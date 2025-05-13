@@ -577,6 +577,5 @@ U_BOOT_DRIVER(inno_hdmi_starfive) = {
 	.of_to_plat = inno_hdmi_of_to_plat,
 	.probe = inno_hdmi_probe,
 	.priv_auto	= sizeof(struct sf_hdmi_priv),
-	.remove = sf_hdmi_remove,
-	.flags = DM_FLAG_OS_PREPARE,
+	.remove = sf_hdmi_remove
 };

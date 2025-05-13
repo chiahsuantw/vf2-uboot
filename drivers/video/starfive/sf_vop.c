@@ -980,6 +980,5 @@ U_BOOT_DRIVER(starfive_dc8200) = {
 	.bind	= sf_vop_bind,
 	.probe	= sf_vop_probe,
     .remove = sf_vop_remove,
-	.priv_auto	= sizeof(struct sf_vop_priv),
-	.flags = DM_FLAG_OS_PREPARE,
+	.priv_auto	= sizeof(struct sf_vop_priv)
 };
